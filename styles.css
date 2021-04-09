@@ -381,6 +381,7 @@ input[type="email"] {
     border-radius: 2px;
 }
 
+
 ::placeholder {
     color: #A6A5AA;
 }
@@ -401,6 +402,28 @@ textarea {
     background: transparent;
     color: #f0f0f0;
 }
+
+@media (max-width: 750px) {
+    div.footer-input {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        margin-bottom: 1em;
+        margin-right: 0;
+    }
+
+    div.footer-textarea {
+        padding-top: .5rem;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
 
 div.footer-btn {
     display: flex;
