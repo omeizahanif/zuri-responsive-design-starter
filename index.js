@@ -3,6 +3,6 @@ const svgButton = document.querySelector('.nav-toggle');
 
 svgButton.addEventListener('click', function(e) {
     e.preventDefault();
-        navLinks.classList.toggle('show-links');
+    navLinks.classList.toggle('show-links');
     
 });
