@@ -15,6 +15,10 @@ div.nav-bar {
     background: #304353;
 }
 
+button.nav-toggle {
+    display: none;
+}
+
 div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
@@ -42,6 +46,46 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+}
+
+
+@media (max-width: 750px) {
+    div.nav-bar {
+        flex-direction: column;
+ 
+    }
+
+    div.nav-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button.nav-toggle {
+        display: block;
+        background: #304353;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    ul.nav-links {
+        margin-top: 1em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hide-links {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .show-links {
+        height: 10rem;
+    }
+
+    ul li {
+        padding: .5em;
+    }
 }
 
 div.hero-section {
@@ -87,6 +131,8 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
+
+
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
@@ -129,6 +175,8 @@ div.hero-background-pos {
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
+
+
 
 div.snapshot-team {
     background: #f0f0f0;
@@ -206,6 +254,38 @@ div.box1 h5 {
     padding-top: 2rem;
     color: #E44C65;
     font-size: 1rem;
+}
+
+@media (max-width: 750px) {
+    div.hero-section {
+        padding: 5rem;
+    }
+
+    div.hero-background {
+        padding: 5rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.background {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    div.background h4 {
+        padding: 1rem 0;
+    }
+
+    div.background p {
+        padding: 1rem .5rem;
+    }
+
+    div.snapshot-box-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 div.gallery-section {
